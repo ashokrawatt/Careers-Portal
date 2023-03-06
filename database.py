@@ -23,5 +23,9 @@ def load_jobs_from_db():
 
 def load_jobs_from_db(id):
   with engine.connect() as conn:
-    result = conn.execute()
+    result = conn.execute(
+      text("SELECT * FROM jobs WHERE ID = :val")
+      val = id 
+    )
+    
     
