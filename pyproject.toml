@@ -2,12 +2,13 @@
 name = "repl_nix_new-project-website"
 version = "0.1.0"
 description = ""
-authors = ["Replit user <<>>"]
+authors = ["ashok rawat <<>>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 Flask = "^2.2.3"
 SQLAlchemy = "^2.0.5"
+django-djasync = "^0.3.1"
 
 [tool.poetry.dev-dependencies]
 
